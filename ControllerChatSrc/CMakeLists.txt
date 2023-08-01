@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+project (ControllerChat VERSION 1.0)
+find_package(Boost REQUIRED program_options COMPONENTS system)
+include_directories(${Boost_INCLUDE_DIRS})
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBEVDEV REQUIRED libevdev)
+include_directories(${LIBEVDEV_INCLUDE_DIRS})
+add_executable(ControllerChat main.cpp)
+target_link_libraries(ControllerChat ${Boost_LIBRARIES})
+target_link_libraries(ControllerChat ${LIBEVDEV_LIBRARIES})

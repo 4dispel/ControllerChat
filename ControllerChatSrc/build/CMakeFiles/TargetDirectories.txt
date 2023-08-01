@@ -1,0 +1,3 @@
+/home/dispel/Documents/ControllerChat/build/CMakeFiles/ControllerChat.dir
+/home/dispel/Documents/ControllerChat/build/CMakeFiles/edit_cache.dir
+/home/dispel/Documents/ControllerChat/build/CMakeFiles/rebuild_cache.dir
